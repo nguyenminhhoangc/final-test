@@ -17,7 +17,7 @@ let lichsu=document.querySelector('.bang-lich-su');
 
 const testwin = document.querySelector('.gioi-han');
 const arrtestwin = Array.from(testwin.children);
-const arr=Array.from(testwin.children);
+const arr=arrtestwin;
 
 function xaotron() {
     const randombox = document.querySelector('.gioi-han');
@@ -90,7 +90,7 @@ document.addEventListener('keydown', function (event) {
             boxs[vitrimoi].className = tgclass;
             vitri=vitrimoi;
             sobuoc++;
-            if (boxs.length === arrtestwin.length && boxs.every((box, index) => box.textContent === arrtestwin[index].textContent)) {
+            if (boxs.length === arr.length && boxs.every((box, index) => box.textContent === arr[index].textContent)) {
                 alert("You win!");
                 sbtn.textContent = 'Bắt đầu';
                 lichsu.innerHTML += `<tr><td>${lichsu.children.length}</td><td>${sobuoc} bước</td><td>${dinhdangtime(x)}</td></tr>`;
