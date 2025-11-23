@@ -17,7 +17,7 @@ let lichsu=document.querySelector('.bang-lich-su');
 
 const testwin = document.querySelector('.gioi-han');
 const arrtestwin = Array.from(testwin.children);
-const arr=arrtestwin;
+const arr=Array.from(arrtestwin);
 
 function xaotron() {
     const randombox = document.querySelector('.gioi-han');
